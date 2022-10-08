@@ -18,7 +18,7 @@ const blogSchema = new mongoose.Schema({
     },
     tags: {
         type:[String],
-        trim: true
+        lowercase:true
     },
     category: {
         type: String,
